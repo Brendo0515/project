@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--Jquery CDN-->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!--Plotly CDN-->
+    <link rel="stylesheet" type="text/css" href="style.css"> <!--Link to separate stylesheet-->
+    <title>Restaurant Ranker</title>
+  </head>
+ 
+  <body>
+      <div class = "top" >
+        <h1>Welcome to Restaurant Ranker!</h1>
+        <div class = "gif">
+            <img id = "ramen" src = "img/ramen.gif" alt = "ramengif">
+        </div>
+        <a href = "https://tenor.com/view/ramen-noodles-anime-gif-11689247" id = "Source" alt = "Ramen Gif">Image Source</a>
+      </div>
+
+      <form id = #myform>
+          <fieldset>
+              <label id = "textheader" for="textbox">Search for cuisine: </label>
+              <input type = "text"  id = "user">
+              <button type = "button" onclick = "getfunction()">Submit</button>
+          </fieldset>
+      </form>
+
+      <div class = "results">
+        <p class = "resultheader">Here are 10 restaurants in the Detroit Area:</p>
+        <ol>
+          <li>
+            <p>Restaurant Name: <span id = "res1"></span></br> Restaurant Rating: <span id = "rat1"></span></p>
+          </li>
+          <li>
+            <p>Restaurant Name: <span id = "res2"></span></br> Restaurant Rating: <span id = "rat2"></span></p>
+          </li>
+          <li>
+            <p>Restaurant Name: <span id = "res3"></span></br> Restaurant Rating: <span id = "rat3"></span></p>
+          </li>
+          <li>
+            <p>Restaurant Name: <span id = "res4"></span></br> Restaurant Rating: <span id = "rat4"></span></p>
+          </li>
+          <li>
+            <p>Restaurant Name: <span id = "res5"></span></br> Restaurant Rating: <span id = "rat5"></span></p>
+          </li>
+          <li>
+            <p>Restaurant Name: <span id = "res6"></span></br> Restaurant Rating: <span id = "rat6"></span></p>
+          </li>
+          <li>
+            <p>Restaurant Name: <span id = "res7"></span></br> Restaurant Rating: <span id = "rat7"></span></p>
+          </li>
+          <li>
+            <p>Restaurant Name: <span id = "res8"></span></br> Restaurant Rating: <span id = "rat8"></span></p>
+          </li>
+          <li>
+            <p>Restaurant Name: <span id = "res9"></span></br> Restaurant Rating: <span id = "rat9"></span></p>
+          </li>
+          <li>
+            <p>Restaurant Name: <span id = "res10"></span></br> Restaurant Rating: <span id = "rat10"></span></p>
+          </li>
+        </ol>
+      </div>
+      <div id="chart"><!-- Plotly chart --></div>
+      <script src = "final.js"></script> <!--Link to separate JS file-->
+
+      <footer>
+          Created by Brendon Tseng<br/>
+            Powered by the Zomato API
+    </footer>
+  </body>
+</html>
